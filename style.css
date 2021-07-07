@@ -1,0 +1,7 @@
+body {
+  overflow: hidden; /* tout ce qui sort de l'ecran ne pas le voir*/
+}
+.bulle {
+  border-radius: 200px;
+  background-color: aqua;
+}
