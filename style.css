@@ -1,7 +1,48 @@
+html {
+  cursor: crosshair;
+}
 body {
   overflow: hidden; /* tout ce qui sort de l'ecran ne pas le voir*/
+  /* min-height: 100vh; */
+}
+.displayNone {
+  display: none;
+}
+div {
+  display: flex;
+  justify-content: center;
+}
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 200px;
+  background-color: goldenrod;
+  color: black;
+}
+h3 {
+  text-align: center;
+  width: 100%;
+  margin-top: 100px;
+  font-size: 10em;
+  opacity: 0.5;
 }
 .bulle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
   border-radius: 200px;
-  background-color: aqua;
+  color: white;
+  font-size: larger;
+  animation: deplace 8s;
+  opacity: 0;
+}
+@keyframes deplace {
+  to {
+    top: -100px;
+    left: var(--left);
+    opacity: 1;
+  }
 }
