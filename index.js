@@ -10,7 +10,7 @@ const colorArray = [
 ];
 counterText = document.querySelector("h3");
 counter = 1;
-const tirSon = new Audio("son/cartoon.mp3");
+const tirSon = new Audio("son/Pop1.mp3");
 
 const makeBubble = () => {
   let random = colorArray[Math.floor(Math.random() * colorArray.length)];
@@ -44,4 +44,4 @@ const makeBubble = () => {
   });
 };
 
-setInterval(makeBubble, 1000);
+setInterval(makeBubble, 1500);
